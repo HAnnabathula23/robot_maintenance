@@ -1,0 +1,84 @@
+/* this is the main frontend file for quick visual changes */
+
+:root {
+  --bg: #f7f9fb;
+  --panel: #ffffff;
+  --ink: #132033;
+  --muted: #5f6f83;
+  --line: #dde5ef;
+  --accent: #0f766e;
+  --accent-2: #f59e0b;
+}
+
+.stApp {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.block-container {
+  max-width: 1180px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.hero {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.10), rgba(245, 158, 11, 0.12)),
+    var(--panel);
+  padding: 28px 30px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 2.25rem;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.hero-copy {
+  max-width: 680px;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+[data-testid="stMetric"] {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px 16px;
+}
+
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stSlider [data-baseweb="slider"] {
+  padding-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 22px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
